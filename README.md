@@ -1,25 +1,22 @@
 # Blog API
 
-Esta é uma API simples para um sistema de blog, construída usando Spring Boot e MongoDB.
-A API oferece operações básicas para gerenciar usuários, posts e comentários.
+Blog API é um projeto Java Spring que utiliza um banco de dados MongoDB em um contêiner Docker.
+O projeto oferece funcionalidades para gerenciamento de usuários e posts em um ambiente simulado de blog.
+A aplicação fornece operações básicas CRUD para usuários, incluindo criação, leitura,
+atualização e exclusão, e também permite a busca de posts por título e por critérios avançados 
+como texto e intervalo de datas. Este projeto demonstra o uso do Spring Boot em conjunto com o MongoDB
+em um ambiente Dockerizado, fornecendo uma API RESTful para interação com os recursos disponíveis.
 
 
 ## Requisitos
-Certifique-se de ter o Java e o Maven instalados em sua máquina.
+Certifique-se de ter o Java, Maven e Docker instalados em sua máquina.
 
 
 ### Executando a Aplicação
 
-A aplicação utiliza o MongoDB como banco de dados. Certifique-se de ter um servidor MongoDB
-em execução ou atualize as configurações no arquivo application.properties para apontar para o seu servidor MongoDB.
-
-
-1. Configuração do Banco de Dados.
-
+1. Crie e execute um contêiner MongoDB:
 ```bash
-spring.data.mongodb.host=localhost
-spring.data.mongodb.port=27017
-spring.data.mongodb.database=blogdb
+docker run --name mongodb_v6 -d -p 27017:27017 mongo:7.0
 ```
 
 2. Clone o repositório:
@@ -27,24 +24,23 @@ spring.data.mongodb.database=blogdb
 git@github.com:Phyllipesa/blog-api-spring-boot-mongodb.git
 ```
 
-
 3. Navegue até o diretório do projeto:
-
 ```bash
-cd blog-api
+cd blog-api-spring-boot-mongodb
 ```
 
-
-4. Execute a aplicação usando Maven:
-
+4. Execute a aplicação usando Maven.
 ```bash
 mvn spring-boot:run
 ```
 
-A aplicação será iniciada em 'http://localhost:8080'.
+5. A aplicação será iniciada em 'http://localhost:8080'.
+
+6. Utilize as configurações de ENV e Collections fornecidas na pasta "docs" com o Postman ou outra ferramenta similar para realizar requisições e testar a API.
 
 
 ### Tecnologias
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)

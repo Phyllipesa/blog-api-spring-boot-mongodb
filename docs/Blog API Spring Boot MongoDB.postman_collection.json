@@ -1,0 +1,230 @@
+{
+	"info": {
+		"_postman_id": "f6b70152-b3e5-4d8e-b48a-4a4a4db4de3c",
+		"name": "Blog API Spring Boot MongoDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26303606"
+	},
+	"item": [
+		{
+			"name": "exceptions",
+			"item": [
+				{
+					"name": "User with invalid id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/users/655b8125088fb91d86fcea47",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"655b8125088fb91d86fcea47"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Finds all users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/users",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find a user by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/users/65e25906037e73289fb95736",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"65e25906037e73289fb95736"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Insert a user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Jose\",\n    \"email\": \"jose@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/users",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/users/65e25add037e73289fb9573b",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"65e25add037e73289fb9573b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"name\": \"Maria J Brown\",\n        \"email\": \"mariajb@gmail.com\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseUrl}}/users/65e25906037e73289fb95736",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"65e25906037e73289fb95736"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find a posts by user id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/users/65e25906037e73289fb95736/posts",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"users",
+						"65e25906037e73289fb95736",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find a post by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/posts/65e25906037e73289fb95739",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"posts",
+						"65e25906037e73289fb95739"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find a posts by titlesearch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/posts/titlesearch?text=bom%20dia",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"posts",
+						"titlesearch"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "bom%20dia"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Find a posts by fullsearch",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/posts/fullsearch?text=bom&maxDate=2018-03-10",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"posts",
+						"fullsearch"
+					],
+					"query": [
+						{
+							"key": "text",
+							"value": "bom"
+						},
+						{
+							"key": "maxDate",
+							"value": "2018-03-10"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
