@@ -7,10 +7,12 @@ atualização e exclusão, e também permite a busca de posts por título e por 
 como texto e intervalo de datas. Este projeto demonstra o uso do Spring Boot em conjunto com o MongoDB
 em um ambiente Dockerizado, fornecendo uma API RESTful para interação com os recursos disponíveis.
 
+---
 
-## Requisitos
+### Requisitos
 Certifique-se de ter o Java, Maven e Docker instalados em sua máquina.
 
+---
 
 ### Executando a Aplicação
 
@@ -24,10 +26,8 @@ docker run --name mongodb_v6 -d -p 27017:27017 mongo:7.0
 git@github.com:Phyllipesa/blog-api-spring-boot-mongodb.git
 ```
 
-3. Navegue até o diretório do projeto:
-```bash
-cd blog-api-spring-boot-mongodb
-```
+3. Abra o projeto utilizando a IDE de preferência.
+
 
 4. Execute a aplicação usando Maven.
 ```bash
@@ -36,8 +36,10 @@ mvn spring-boot:run
 
 5. A aplicação será iniciada em 'http://localhost:8080'.
 
+
 6. Utilize as configurações de ENV e Collections fornecidas na pasta "docs" com o Postman ou outra ferramenta similar para realizar requisições e testar a API.
 
+---
 
 ### Tecnologias
 ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
@@ -50,6 +52,7 @@ mvn spring-boot:run
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
+---
 
 ### Autores
 - [@phyllipesa](https://github.com/phyllipesa) - Desenvolvimento do projeto
