@@ -16,12 +16,12 @@ Certifique-se de ter o Java, Maven e Docker instalados em sua máquina.
 
 ### Executando a Aplicação
 
-1. Crie e execute um contêiner MongoDB:
+1. Crie e execute um contêiner MongoDB.
 ```bash
 docker run --name mongodb_v6 -d -p 27017:27017 mongo:7.0
 ```
 
-2. Clone o repositório:
+2. Clone o repositório.
 ```bash
 git@github.com:Phyllipesa/blog-api-spring-boot-mongodb.git
 ```
@@ -47,13 +47,11 @@ mvn spring-boot:run
 ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
 ![Apache Maven](https://img.shields.io/badge/Apache%20Maven-C71A36?style=for-the-badge&logo=Apache%20Maven&logoColor=white)
 ![IntelliJ IDEA](https://img.shields.io/badge/IntelliJIDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white)
-![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 ---
 
 ### Autores
-- [@phyllipesa](https://github.com/phyllipesa) - Desenvolvimento do projeto
 - [@acenelio](https://github.com/acenelio) - Commit inicial
+- [@phyllipesa](https://github.com/phyllipesa) - Desenvolvimento do projeto
